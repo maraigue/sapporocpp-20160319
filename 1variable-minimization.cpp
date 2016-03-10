@@ -72,7 +72,7 @@ std::pair<double, double> newton_minimize(double x_min, double x_max, double pre
 
 template <class Funcs>
 inline std::pair<double, double> newton_minimize(double x_min, double x_max){
-	newton_minimize<Funcs>(x_min, x_max, std::sqrt(DBL_MIN));
+	return newton_minimize<Funcs>(x_min, x_max, std::sqrt(DBL_MIN));
 }
 
 template <class Funcs>
